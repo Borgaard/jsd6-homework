@@ -18,11 +18,9 @@ Make sure the new questions you add to the survey use the same class names as in
 function addRemove(item) {  
     var $removeButton = $('<button>').html("Remove question");
     item.append($removeButton);
-    $removeButton.css("background-color", "orange");
     $("button").on("click", function(event){
         event.preventDefault();
         $(this).parent().remove();
-        console.log("removed");
     });
 }
 $(document).ready(function(){
