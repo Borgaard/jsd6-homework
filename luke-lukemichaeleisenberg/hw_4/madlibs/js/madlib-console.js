@@ -1,3 +1,25 @@
+var createButton = document.getElementById("create");
+var favoriteList = [];
+
+createButton.onclick = function(event) {
+  var startUpString = generateStartup();
+  updateHeaderString(startUpString);
+}
+
+var saveButton = document.getElementById("save");
+
+createButton.onclick = function(event) {
+  var startUpString = generateStartup();
+  updateHeaderString(startUpString);
+}
+
+var createButton = document.getElementById("print");
+
+createButton.onclick = function(event) {
+  var startUpString = generateStartup();
+  updateHeaderString(startUpString);
+}
+
 //Generates and returns a string 'A startup that is X, but for Y'
 function generateStartup () {
   var startupX = ['Uber', 'Google', 'Amazon', 'Apple', 'Facebook', 'Twitter'];
@@ -20,11 +42,4 @@ function updateHeaderString (inputString) {
     headerElement.removeChild(currentTitle);
   }
   headerElement.appendChild(newStringNode);
-}
-
-var createButton = document.getElementById("create");
-
-createButton.onclick = function(event) {
-  var startUpString = generateStartup();
-  updateHeaderString(startUpString);
 }
