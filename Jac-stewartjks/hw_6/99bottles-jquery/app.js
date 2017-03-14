@@ -15,7 +15,7 @@
 
 // add one line of lyrics
 // function addLyric() {
-//  
+//
 // }
 
 // declare a loop that counts down from 99 to 1
