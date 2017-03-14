@@ -1,13 +1,13 @@
 JavaScript Development Homework Repository
 =============================
 
-> Office hours:<br>
-Mondays & Wednesdays from 5:30-6:30, located in classroom 4 or in the workspace (fire escape/lounge).
+Office hours:<br>
+Mondays & Wednesdays from 5:30-6:30, located in classroom 4 or in the Duncan workspace (fire escape/lounge).
 
-How To Use This Repo
------------------------
+[Homework table](#weekly-homework) is updated weekly.
 
 This is the repository where you'll submit your homework.
+
 Follow these directions closely to switch over to this repository.
 
 1. Fork this repository.
@@ -34,21 +34,27 @@ Example of how your local homework directory should be structured:
 
 Instructions
 -------------
-
-Use this repository for your homework and any files you are contributing in class.
+**Submit homework by pushing to your jsd6-homework fork, then submit a pull request**
 
 If any files are in the pull request outside of your personal folder, we will send it back to you to fix it!
 
 Weekly Homework
 ----------------
 
-**Submit homework by pushing to your jsd6-homework repo, then submit a pull request**
 
  \#  | Assignment | Class Topic | Due Date
 :-: | :--------- | :---------- | :-------
-00  | -CodeAcademy's JavaScript Fundamentals <br>-Try Git exercise | [00-installfest](https://github.com/svodnik/sfjs6/tree/master/00-installfest) | Monday, February 6th
-01  |            | -           | -
-02  |            | -           | -
-03  |            | -           | -
-04  |            | -           | -
-05  |            | -           | -
+00  | CodeAcademy's JavaScript Fundamentals, and <br>Try Git exercise | [00-installfest](https://github.com/svodnik/sfjs6/tree/master/00-installfest) | Monday, February 6th
+01  | bottlesOfBeer.js (found in `starter-code/4-homework-99-bottles-of-beer` folder) | [02-data-types-loops](https://github.com/svodnik/sfjs6/tree/master/02-data-types-loops) | Monday, February 13th
+02  | `fizzBuzz.js`<br>`ages.js`<br>`dice.js`<br>Bonus: `randomAddressGenerator.js` | [03-conditionals-functions](https://github.com/svodnik/sfjs6/tree/master/03-conditionals-functions) | Monday, February 20th
+03  | Closures lab<br>Read Hubot documentation (links provided) | [04-scope-closures](https://github.com/svodnik/sfjs6/tree/master/04-scope-closures) | Monday, February 20th
+04  | Hubot Slackbot - PM Nicole the repo link to your bot's code. | [05-slackbot-lab](https://github.com/svodnik/sfjs6/tree/master/05-slackbot-lab) | Monday, February 27th
+05  | Outline & create objects (`3-objects-homework` folder)<br>Convert between JavaScript and JSON (`4-json-homework` folder) | [06-objects-json](https://github.com/svodnik/sfjs6/tree/master/06-objects-json) | Monday, February 27th
+06  | Madlibs (`05-madlibs` folder)<br>`bottlesOfBeer.js` now in the browser window!<br>Bonus: Dice! (`6-dice` folder, instructions in `js/app.js`) | [07-dom-intro](https://github.com/svodnik/sfjs6/tree/master/07-dom-intro) | Monday, March 6th
+07  | jQuery (`5-jquery-homework` folder) | [08-jquery](https://github.com/svodnik/sfjs6/tree/master/08-jquery-templating) | Monday, March 6th
+08  |  Open Weather Map (`3_jquery_ajax_exercise` folder)<br>Bonus: Kelvin -> Fahrenheit conversion | [09-ajax-apis](https://github.com/svodnik/sfjs6/tree/master/09-ajax-apis) | Monday, March 13th
+10  | Guest List (`4_homework` folder) | [10-async-callbacks](https://github.com/svodnik/sfjs6/tree/master/10-async-callbacks) | Monday, March 13th
+11  |            | -           | -
+12  |            | -           | -
+13  |            | -           | -
+14  |            | -           | -

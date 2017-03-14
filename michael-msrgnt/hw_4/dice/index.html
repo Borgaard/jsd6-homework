@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <style media="screen">
+    div {
+      display: inline;
+    }
+
+    button {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+  </style>
+  </head>
+  <body>
+    <button type="button" name="button">Roll 'em</button>
+    <div class="one">
+      <img class="imga" src="" alt="">
+    </div>
+    <div class="two">
+      <img class="imgb" src="" alt="">
+    </div>
+
+    <script type="text/javascript">
+
+      var button = document.querySelector("button");
+
+      button.onclick = function(){
+        var DOM_img = document.createElement("img");
+        var diceA = Math.ceil(Math.random() * 6);
+        var diceB = Math.ceil(Math.random() * 6);
+        var one = document.querySelector(".imga");
+        var two = document.querySelector(".imgb");
+
+          if (diceA === 1) {
+            one.src = "img/1.png";
+          } else if (diceA === 2) {
+            one.src = "img/2.png";
+          } else if (diceA === 3) {
+            one.src = "img/3.png";
+          } else if (diceA === 4) {
+            one.src = "img/4.png";
+          }  else if (diceA === 5) {
+            one.src = "img/5.png";
+          } else if (diceA === 6) {
+            one.src = "img/6.png";
+          }
+
+          if (diceB === 1) {
+            two.src = "img/1.png";
+          } else if (diceB === 2) {
+            two.src = "img/2.png";
+          } else if (diceB === 3) {
+            two.src = "img/3.png";
+          } else if (diceB === 4) {
+            two.src = "img/4.png";
+          }  else if (diceB === 5) {
+            two.src = "img/5.png";
+          } else if (diceB === 6) {
+            two.src = "img/6.png";
+          }
+
+          if (diceA && diceB === 1) {
+            console.log("snake eyes!")
+          }
+      }
+    </script>
+  </body>
+</html>
