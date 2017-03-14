@@ -20,30 +20,35 @@ var darkUrl = "https://api.darksky.net/forecast/" + darkApi + "/" + lat + "," + 
 
 var $openButton = $("<button>").html("OpenWeatherMap").addClass("open");
 var $darkSkyButton = $("<button>").html("DarkSky").addClass("dark");
+var far;
+var cel;
 
 $("body").append($openButton).append($darkSkyButton);
 
-function getTemp(id) {
-  var id = $(this).attr("class");
-  var url = id + "Url";
+function darkTemp() {
   $.ajax({
-    url: url,
+    url: darkUrl,
     dataType: "jsonp",
-    jsonCallback: "jsonp",
     success: function useData(data){
-      var far;
-      var cel;
-      if (id = "dark") {
-        far = data.currently.temperature;
-        cel = (far-32)*(5/9);
-      } else if (id = "open") {
-        far = data.main.temp*(9/5)-459.67;
-        cel = data.main.temp-273.15;
-      }
+      far = data.currently.temperature;
+      cel = (far-32)*(5/9);
       console.log("The temperature in San Francisco is "  + Math.ceil(far) + "°F \(" + Math.ceil(cel) + "°C\).");
     }
   });
 };
-
-$("button").on("click", getTemp);
+function openTemp() {
+  $.ajax({
+    url: openUrl,
+    dataType: "jsonp",
+    success: function useData(data){
+        far = data.main.temp*(9/5)-459.67;
+        cel = data.main.temp-273.15;
+      console.log("The temperature in San Francisco is "  + Math.ceil(far) + "°F \(" + Math.ceil(cel) + "°C\).");
+    }
+  });
+};
+// $(".open").on("click", getTemp(openUrl));
+$(".open").on("click", openTemp);
+// $(".dark").on("click", getTemp(darkUrl));
+$(".dark").on("click", darkTemp);
 
