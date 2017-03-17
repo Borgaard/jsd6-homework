@@ -24,6 +24,7 @@ $.ajax({
     success: function(response){
         //console.log(response);
         console.log(response.main.temp)
+                console.log(response)
     }
 
 });
