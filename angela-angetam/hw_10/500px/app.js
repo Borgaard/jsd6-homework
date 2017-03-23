@@ -2,7 +2,7 @@ $(function() {
   // this sets up a connection with 500px similar to how jquery uses $ to id itself
   
   _500px.init({
-    sdk_key: '159ef5ed3e3f0a94f3e9af3066f9a5589a5db0a6'
+    sdk_key: ''
   });
   // this goes through the first 4 steps of OAuth: token request, login prompt to user, login credentials back to web service auth server, and then it sends response with token back to our app (.____.)b
   $("#login").click(function(){
