@@ -18,6 +18,7 @@ $("button").on("click", function(){
   var apiDark = "8ffef538ce32bef0af139971a8a4801c";
   var weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + inny + "&APPID=" + apiKey;
   $.get(weatherUrl, function(response){
+    dataType: 'jsonp';
     var weather = (response.weather[0].description);
     var temp = response.main.temp;
     var latDark = response.coord.lat;
@@ -28,6 +29,7 @@ $("button").on("click", function(){
     $("div").text("Currently, it's nothin' but " + " '" + weather + "' " + " in " + JSON.parse(inny));
     $(".divB").text(tempC + " degrees");
       $.get(darkUrl, function(responseB){
+        dataType: 'jsonp';
         var weatherDark = (responseB.currently.summary);
         var tempDark = (responseB.currently.apparentTemperature);
         $(".divC").text("Oh, and if you're into cross-validation, DarkSky (spooky name, I know) says it's " + " '" + weatherDark + "' " + " in " + JSON.parse(inny) + ", and a balmy " + tempDark + " degrees out");
