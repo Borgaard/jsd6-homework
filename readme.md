@@ -6,9 +6,8 @@ Mondays & Wednesdays from 5:30-6:30, located in classroom 4 or in the Duncan wor
 
 [Homework table](#weekly-homework) is updated weekly.
 
+This is the repository where you'll submit your homework.
 
-#### How To Use This Repo
-This is the repository where you'll submit your homework.    
 Follow these directions closely to switch over to this repository.
 
 1. Fork this repository.
@@ -19,7 +18,7 @@ Follow these directions closely to switch over to this repository.
 Example of how your local homework directory should be structured:
 
 
-    |-- code/   
+    |-- code/
         |-- jsd6-homework/
             |-- firstName-githubUsername/
                 |-- hw_1/
