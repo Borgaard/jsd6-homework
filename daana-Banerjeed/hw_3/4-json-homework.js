@@ -28,11 +28,19 @@ flickrObj.items.forEach (function(items) {
 3. Create a new array called 'links'. Iterate through the items array in flickrObj and store the the links to each item in the 'links' array.
 */
 
-var links = []
-links +=
+var links = [];
+function storeLinks() {
+    for(i; i<flickrObj.items.length; i++) { 
+        links.push(flickrObj.items[i].link);
+    }
+}
+storeLinks();
  
 
 /*
 4. Convert the 'links' array into a JSON string. Do a console.log of that JSON string, copy the results from the terminal and paste them into the input box at http://jsonlint.com/
 Did it create a valid JSON string?
 */ 
+
+var linksJSON = JSON.stringify(links);
+console.log(linksJSON);
