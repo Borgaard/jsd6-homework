@@ -18,9 +18,7 @@ var personModule = (function (name, age) {
   var age = age;
   var kids = [];
 
-  return {  // Return an object exposed to the public
-
-    // Add a color to our list
+  return {  
     getKids: function() {
       return kids;
     },
